@@ -17,5 +17,5 @@ Pillow
 
 # Portia deps
 -e git+https://github.com/scrapy/scrapely@b88b49c#egg=scrapely
--e git+https://github.com/scrapinghub/dateparser@d1e93e2#egg=dateparser
+-e git+https://github.com/scrapinghub/dateparser@6064c80#egg=dateparser
 -e git+https://github.com/scrapinghub/portia@5f623e8#egg=slybot==dev&subdirectory=slybot
