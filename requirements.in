@@ -12,6 +12,12 @@ scrapy-pagestorage
 boto
 # Adding bsddb package for DeltaFetch addon
 bsddb3
+# required by Monkeylearn addon
+monkeylearn
+# required by Monitoring addon egg
+six
+Jinja2
+slackclient
 # Images addon needs Pillow
 Pillow
 

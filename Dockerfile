@@ -43,6 +43,10 @@ ENV ENTRYPOINT='["/usr/local/sbin/portia-entrypoint"]'
 COPY requirements.txt /requirements-portia.txt
 RUN pip install --no-cache-dir -r requirements-portia.txt
 
+RUN mkdir /app
+COPY addons_eggs /app/addons_eggs
+RUN chown nobody:nogroup -R /app/addons_eggs
+
 COPY portia-entrypoint /usr/local/sbin/
 
 COPY eggbased-entrypoint /usr/local/sbin/
